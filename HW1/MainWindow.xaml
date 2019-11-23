@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1000">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="385*"/>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="130*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="370*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="4">
+            <Image Source="MetanitTop.png"></Image>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="4" Background="Gray" Margin="0,50,0,0" Grid.RowSpan="2"/>
+        <StackPanel Grid.Row="2" Grid.Column="0" Background="LightGray">
+            <Button Height="20" Content="C#/.NET"></Button>
+            <Button Height="20" Content="WEB"></Button>
+            <Button Height="20" Content="SQL"></Button>
+            <Button Height="20" Content="Python"></Button>
+            <Button Height="20" Content="Java"></Button>
+            <Button Height="20" Content="C/C++"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="Gray" Orientation="Horizontal">
+            <Button Width="65" Content="C#/.NET"></Button>
+            <Button Width="65" Content="Java"></Button>
+            <Button Width="65" Content="WEB"></Button>
+            <Button Width="65" Content="Python"></Button>
+            <Button Width="65" Content="C/C++"></Button>
+            <Button Width="65" Content="SQL"></Button>
+            <Button Width="65" Content="MONGODB"></Button>
+            <Button Width="65" Content="GO"></Button>
+            <Button Width="65" Content="VB.NET"></Button>
+            <Button Width="65" Content="SWIFT"></Button>
+            <Button Width="65" Content="KOTLIN"></Button>
+            <Button Width="65" Content="DART"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="3" Background="LightGray" >
+            <MediaElement Source="Ad.mp4"></MediaElement>
+            <Label Margin="0,200,0,0" Content="ПАМАГИТИ"/>
+            <Label Content="QIWI: +77786226134"/>
+            <Label Content="Kaspi: +77786226134"></Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label Content="О сайте" FontSize="40"></Label>
+            <Label Content="БЛа бла бля"></Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2">
+            <Label Content="Что нового" FontSize="40"></Label>
+            <Label Content="БЛа бла Обновлено."></Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="4" Background="LightGray" Orientation="Horizontal">
+            <Button Content="Вконтакте" Margin="350,0,0,30" Height="17"></Button>
+            <Button Content="Телеграм" Margin="0,0,0,30" Height="17"></Button>
+            <Button Content="Youtube" Margin="0,0,0,30" Height="17"></Button>
+            <Button Content="Twitter" Margin="0,0,0,30" Height="17"></Button>
+            <Button Content="Помощь сайту" Margin="0,0,0,30" Height="17"></Button>
+        </StackPanel>
+        <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="300,30,0,0" Content="Права под защитой. Copyright(C)"></Label>
     </Grid>
 </Window>
